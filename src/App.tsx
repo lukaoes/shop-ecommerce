@@ -1,7 +1,8 @@
+import Header from 'components/layout/header'
 import React from 'react'
 
 function App() {
-  return <div></div>
+  return <Header />
 }
 
 export default App
