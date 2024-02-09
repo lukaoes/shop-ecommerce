@@ -8,6 +8,12 @@ export const FooterLayoutTop = styled.div`
   border-bottom: 1px solid #e6e1db;
 `
 
+export const FooterTopLine = styled.div`
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+`
+
 export const FooterContact = styled.div`
   margin-right: 30px;
 

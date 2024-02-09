@@ -6,6 +6,7 @@ import {
   FooterList,
   FooterNewsteller,
   FooterRecentPost,
+  FooterTopLine,
   RecentPostContainer,
 } from './styled'
 import FooterLogo from '../../../assets/images/FooterLogo.png'
@@ -14,6 +15,7 @@ import ArrowRight from '../../../assets/images/ArrowRight.png'
 const Footer = () => {
   return (
     <>
+      <FooterTopLine></FooterTopLine>
       <FooterLayoutTop>
         <FooterContact>
           <img src={FooterLogo} alt="logo" />
