@@ -15,6 +15,13 @@ export const HeaderContent = styled.div`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  font-size: 16px;
+  font-family: LufgaRegular;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
 `
 
 export const Logo = styled.img`
@@ -24,7 +31,8 @@ export const Logo = styled.img`
 
 export const LogoAndNavigation = styled.div`
   display: flex;
-  gap: 50px;
+  align-items: center;
+  gap: 91px;
 
   div ul {
     display: flex;
@@ -34,7 +42,6 @@ export const LogoAndNavigation = styled.div`
       list-style: none;
       display: flex;
       gap: 5px;
-      align-items: center;
 
       img {
         height: 12px;
@@ -46,17 +53,13 @@ export const LogoAndNavigation = styled.div`
 export const HeaderOptions = styled.div`
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 51px;
 `
 
 export const HeaderAuth = styled.div`
   border-bottom: 1px solid #b3afab;
   margin: 0;
   height: 19px;
-
-  a {
-    text-decoration: none;
-  }
 `
 
 export const HeaderIcons = styled.div`

@@ -22,26 +22,36 @@ const Header = () => {
           <Logo src={HeaderLogo} alt="logo" />
           <div>
             <ul>
-              <li>
-                Home
-                <img src={NavigationStar} alt="star" />
-              </li>
-              <li>
-                Shop
-                <img src={NavigationStar} alt="star" />
-              </li>
-              <li>
-                Blog
-                <img src={NavigationStar} alt="star" />
-              </li>
-              <li>
-                Portfolio
-                <img src={NavigationStar} alt="star" />
-              </li>
-              <li>
-                Pages
-                <img src={NavigationStar} alt="star" />
-              </li>
+              <a href="#">
+                <li>
+                  Home
+                  <img src={NavigationStar} alt="star" />
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  Shop
+                  <img src={NavigationStar} alt="star" />
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  Blog
+                  <img src={NavigationStar} alt="star" />
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  Portfolio
+                  <img src={NavigationStar} alt="star" />
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  Pages
+                  <img src={NavigationStar} alt="star" />
+                </li>
+              </a>
             </ul>
           </div>
         </LogoAndNavigation>
