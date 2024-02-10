@@ -1,4 +1,5 @@
 import Card from 'components/card'
+import CardThree from 'components/cardThree'
 import CardTwo from 'components/cardTwo'
 import Footer from 'components/layout/footer'
 import Header from 'components/layout/header'
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Card />
       <CardTwo />
+      <CardThree />
       <Footer />
     </>
   )
