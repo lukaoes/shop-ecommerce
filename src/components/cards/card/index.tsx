@@ -7,8 +7,8 @@ import {
   QuickView,
   SaleTag,
 } from './styled'
-import CardHeartIcon from '../../assets/images/CardHeartIcon.png'
-import CardCartIcon from '../../assets/images/CardCartIcon.png'
+import CardHeartIcon from '../../../assets/images/CardHeartIcon.png'
+import CardCartIcon from '../../../assets/images/CardCartIcon.png'
 
 const Card = () => {
   return (

@@ -1,4 +1,7 @@
-import { CardTwoInfoLeft, CardTwoInfoRight } from 'components/cardTwo/styled'
+import {
+  CardTwoInfoLeft,
+  CardTwoInfoRight,
+} from 'components/cards/cardTwo/styled'
 import {
   CardThreeImage,
   CardThreeInfo,

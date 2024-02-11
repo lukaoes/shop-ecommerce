@@ -1,8 +1,8 @@
-import Card from 'components/card'
-import CardBlockbuster from 'components/cardBlockbuster'
-import CardHot from 'components/cardHot'
-import CardThree from 'components/cardThree'
-import CardTwo from 'components/cardTwo'
+import Card from 'components/cards/card'
+import CardBlockbuster from 'components/cards/cardBlockbuster'
+import CardHot from 'components/cards/cardHot'
+import CardThree from 'components/cards/cardThree'
+import CardTwo from 'components/cards/cardTwo'
 import Footer from 'components/layout/footer'
 import Header from 'components/layout/header'
 
