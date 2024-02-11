@@ -1,4 +1,5 @@
 import Card from 'components/card'
+import CardBlockbuster from 'components/cardBlockbuster'
 import CardHot from 'components/cardHot'
 import CardThree from 'components/cardThree'
 import CardTwo from 'components/cardTwo'
@@ -13,6 +14,7 @@ function App() {
       <CardTwo />
       <CardThree />
       <CardHot />
+      <CardBlockbuster />
       <Footer />
     </>
   )
