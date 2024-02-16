@@ -39,9 +39,12 @@ export const LogoAndNavigation = styled.div`
     gap: 40px;
 
     li {
-      list-style: none;
-      display: flex;
-      gap: 5px;
+      a {
+        display: flex;
+        gap: 5px;
+        opacity: 0.5;
+        padding: 10px 0;
+      }
 
       img {
         height: 12px;

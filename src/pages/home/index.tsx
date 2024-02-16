@@ -1,5 +1,7 @@
+import MostPopularProducts from './components/mostPopularProducts'
+
 const Home = () => {
-  return <div>1</div>
+  return <MostPopularProducts />
 }
 
 export default Home

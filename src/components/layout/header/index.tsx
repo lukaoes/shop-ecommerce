@@ -13,8 +13,13 @@ import NavigationStar from '../../../assets/images/NavigationStar.png'
 import SearchIcon from '../../../assets/images/SearchIcon.png'
 import HeartIcon from '../../../assets/images/HeartIcon.png'
 import CartIcon from '../../../assets/images/CartIcon.png'
+import { NavLink } from 'react-router-dom'
 
 const Header = () => {
+  const activeStyle = {
+    opacity: '1',
+  }
+
   return (
     <HeaderLayout>
       <HeaderContent>
@@ -22,36 +27,51 @@ const Header = () => {
           <Logo src={HeaderLogo} alt="logo" />
           <div>
             <ul>
-              <a href="#">
-                <li>
+              <li>
+                <NavLink
+                  to="/"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Home
                   <img src={NavigationStar} alt="star" />
-                </li>
-              </a>
-              <a href="#">
-                <li>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/shop"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Shop
                   <img src={NavigationStar} alt="star" />
-                </li>
-              </a>
-              <a href="#">
-                <li>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/blog"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Blog
                   <img src={NavigationStar} alt="star" />
-                </li>
-              </a>
-              <a href="#">
-                <li>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/portfolio"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Portfolio
                   <img src={NavigationStar} alt="star" />
-                </li>
-              </a>
-              <a href="#">
-                <li>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/pages"
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Pages
                   <img src={NavigationStar} alt="star" />
-                </li>
-              </a>
+                </NavLink>
+              </li>
             </ul>
           </div>
         </LogoAndNavigation>
