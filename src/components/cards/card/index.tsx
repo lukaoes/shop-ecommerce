@@ -9,16 +9,21 @@ import {
 } from './styled'
 import CardHeartIcon from '../../../assets/images/CardHeartIcon.png'
 import CardCartIcon from '../../../assets/images/CardCartIcon.png'
+import { FC } from 'react'
 
-const Card = () => {
+export interface ICardProps {
+  image: string
+  title: string
+  price: number
+  sale?: number
+}
+
+const Card: FC<ICardProps> = ({ image, title, price, sale }) => {
   return (
     <CardLayout>
       <ImageContainer>
-        <CardImage
-          src="https://www.icolorpalette.com/download/solidcolorimage/666666_solid_color_background_icolorpalette.png"
-          alt="lalalalal"
-        />
-        <SaleTag>GET 20% OFF</SaleTag>
+        <CardImage src={image} alt={title} />
+        {sale && <SaleTag>GET {sale}% OFF</SaleTag>}
         <CardIconContainer>
           <div>
             <img src={CardHeartIcon} alt="heart" />
@@ -30,8 +35,8 @@ const Card = () => {
         <QuickView>QUICK VIEW</QuickView>
       </ImageContainer>
       <CardInfoContainer>
-        <h1>Bluebell Hand Block Tiered Dress</h1>
-        <span>$80</span>
+        <h1>{title}</h1>
+        <span>${price}</span>
       </CardInfoContainer>
     </CardLayout>
   )

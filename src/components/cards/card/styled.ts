@@ -4,7 +4,6 @@ export const CardLayout = styled.div`
   width: 300px;
   height: 474px;
   font-family: LufgaMedium;
-  margin: 0 auto; // for display
 
   h1 {
     display: inline-block;
@@ -80,7 +79,12 @@ export const CardIconContainer = styled.div`
     margin: 0 0 5px;
     border-radius: 32px;
     box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.05);
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 1);
+    }
 
     .CardCartIcon {
       padding: 11px;
