@@ -1,5 +1,15 @@
+import ShopFilter from './components/shopFilter'
+import { ShopContainer, ShopLayout, ShopProducts } from './styled'
+
 const Shop = () => {
-  return <div>shop page</div>
+  return (
+    <ShopContainer>
+      <ShopLayout>
+        <ShopFilter />
+        <ShopProducts></ShopProducts>
+      </ShopLayout>
+    </ShopContainer>
+  )
 }
 
 export default Shop
