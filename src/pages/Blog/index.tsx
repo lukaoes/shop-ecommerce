@@ -5,6 +5,8 @@ import {
   BlogLayout,
   LoadMoreButton,
 } from './styles'
+import SecondHeader from 'components/layout/secondHeader'
+import BlogHeader from '../../assets/images/BlogHeader.jpg'
 
 const blogOne = {
   image:
@@ -22,19 +24,28 @@ const blogTwo = {
   link: '#',
 }
 
+const secondHeaderInfo = {
+  title: 'Blog Post',
+  link: '/blog',
+  image: `${BlogHeader}`,
+}
+
 const Blog = () => {
   return (
-    <BlogLayout>
-      <BlogContainer>
-        <BlogCard {...blogOne} />
-        <BlogCard {...blogTwo} />
-        <BlogCard {...blogTwo} />
-        <BlogCard {...blogOne} />
-      </BlogContainer>
-      <BlogButtonDiv>
-        <LoadMoreButton>Load More</LoadMoreButton>
-      </BlogButtonDiv>
-    </BlogLayout>
+    <>
+      <SecondHeader {...secondHeaderInfo} />
+      <BlogLayout>
+        <BlogContainer>
+          <BlogCard {...blogOne} />
+          <BlogCard {...blogTwo} />
+          <BlogCard {...blogTwo} />
+          <BlogCard {...blogOne} />
+        </BlogContainer>
+        <BlogButtonDiv>
+          <LoadMoreButton>Load More</LoadMoreButton>
+        </BlogButtonDiv>
+      </BlogLayout>
+    </>
   )
 }
 

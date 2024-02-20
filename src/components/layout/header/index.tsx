@@ -65,10 +65,10 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/pages"
+                  to="/aboutus"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                  Pages
+                  About Us
                   <img src={NavigationStar} alt="star" />
                 </NavLink>
               </li>

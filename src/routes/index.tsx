@@ -1,4 +1,5 @@
 import Layout from 'components/layout'
+import AboutUs from 'pages/AboutUs'
 import Blog from 'pages/Blog'
 import ContactUs from 'pages/ContactUs'
 import Page404 from 'pages/Page404'
@@ -15,6 +16,7 @@ const AllRoutes = () => {
           <Route path="/shop" element={<Shop />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/aboutus" element={<AboutUs />} />
         </Route>
         <Route path="*" element={<Page404 />} />
       </Routes>
