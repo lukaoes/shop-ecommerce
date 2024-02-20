@@ -8,6 +8,10 @@ export const HeaderLayout = styled.div`
   border-bottom: 1px solid #e6e1db;
 `
 
+export const Container = styled.div`
+  padding: 0 80px;
+`
+
 export const HeaderContent = styled.div`
   width: 1920px;
   height: 44px;
