@@ -79,11 +79,11 @@ const ShopFilterColorSection: FC<IProps> = ({ onChange }) => {
           <ShopFilterColor
             style={{
               background: item,
-              outline: active === item ? '1px solid ' + item : 'none',
-              // outline:
-              //   window.location.hash === item
-              //     ? '1px solid' + window.location.hash
-              //     : '',
+              // outline: active === item ? '1px solid ' + item : 'none',
+              outline:
+                window.location.hash === item
+                  ? '1px solid' + window.location.hash
+                  : '',
             }}
             key={item}
             onClick={() => onColorChange(item)}

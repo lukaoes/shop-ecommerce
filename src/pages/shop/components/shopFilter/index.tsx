@@ -12,7 +12,7 @@ import ShopFilterColorSection from './components/shopFilterColorSection'
 import ShopFilterSizeSection from './components/shopFilterSizeSection'
 import ShopFilterCategoriesSection from './components/shopFilterCategoriesSection'
 import ShopFilterTagsSection from './components/shopFilterTagsSection'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 interface IFilters {
   search: string
@@ -29,13 +29,10 @@ const ShopFilter = () => {
     category: '',
   })
 
-  useEffect(() => {
-    console.log(filters)
-  }, [filters])
-
   const updateFilter = (key: keyof IFilters, value: string) => {
-    const filterCopy = { ...filters }
+    const filterCopy = filters
     filterCopy[key] = value
+    console.log('filtercopy', filterCopy)
     setFilter(filterCopy)
   }
 

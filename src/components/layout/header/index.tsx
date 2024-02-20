@@ -56,10 +56,10 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/portfolio"
+                  to="/contact"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                  Portfolio
+                  Contact Us
                   <img src={NavigationStar} alt="star" />
                 </NavLink>
               </li>
