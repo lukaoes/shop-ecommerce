@@ -1,4 +1,5 @@
 import Layout from 'components/layout'
+import Blog from 'pages/Blog'
 import ContactUs from 'pages/ContactUs'
 import Page404 from 'pages/Page404'
 import Home from 'pages/home'
@@ -12,6 +13,7 @@ const AllRoutes = () => {
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactUs />} />
         </Route>
         <Route path="*" element={<Page404 />} />
