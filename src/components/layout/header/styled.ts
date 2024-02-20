@@ -6,6 +6,7 @@ export const HeaderLayout = styled.div`
   display: flex;
   align-items: center;
   border-bottom: 1px solid #e6e1db;
+  background: #fff;
 `
 
 export const Container = styled.div`

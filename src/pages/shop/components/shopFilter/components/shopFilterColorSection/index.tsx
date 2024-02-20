@@ -30,6 +30,7 @@ const ShopFilterColorSection: FC<IProps> = ({ onChange }) => {
   // }, [hash])
 
   const urlChange = (val: string) => {
+    onChange(val)
     const originUrl = window.location.origin + window.location.pathname
     const queryString = window.location.search
     let finalUrl = ''

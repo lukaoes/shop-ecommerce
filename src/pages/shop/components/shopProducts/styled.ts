@@ -7,7 +7,7 @@ export const ShopProductsContainer = styled.div`
 
 export const ProductsTopFilter = styled.div`
   display: flex;
-  width: 100%;
+  width: 1290px;
   justify-content: space-between;
   margin: 26px 0 20px 0;
   font-size: 15px;
