@@ -1,12 +1,13 @@
 import ShopFilter from './components/shopFilter'
-import { ShopContainer, ShopLayout, ShopProducts } from './styled'
+import ShopProducts from './components/shopProducts'
+import { ShopContainer, ShopLayout } from './styled'
 
 const Shop = () => {
   return (
     <ShopContainer>
       <ShopLayout>
         <ShopFilter />
-        <ShopProducts></ShopProducts>
+        <ShopProducts />
       </ShopLayout>
     </ShopContainer>
   )

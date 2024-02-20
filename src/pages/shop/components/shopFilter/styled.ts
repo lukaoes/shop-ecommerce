@@ -18,6 +18,7 @@ export const ShopFilterIcon = styled.div`
   font-family: LufgaRegular;
   font-size: 16px;
   margin-bottom: 35px;
+  width: 328px;
 `
 
 export const ShopFilterSearchContainer = styled.div`
