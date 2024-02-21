@@ -1,5 +1,10 @@
 import SecondHeader from 'components/layout/secondHeader'
 import ContactHeader from '../../assets/images/ContactHeader.jpg'
+import { AboutUsLayout } from './styles'
+import Accordion from './components/accordion'
+import ImagesSection from './components/imagesSection'
+import AboutUsClients from './components/aboutUsClients'
+import AboutCompanies from './components/companies'
 
 const secondHeaderInfo = {
   title: 'About Us',
@@ -9,9 +14,15 @@ const secondHeaderInfo = {
 
 const AboutUs = () => {
   return (
-    <div>
+    <>
       <SecondHeader {...secondHeaderInfo} />
-    </div>
+      <AboutUsLayout>
+        <Accordion />
+        <ImagesSection />
+      </AboutUsLayout>
+      <AboutUsClients />
+      <AboutCompanies />
+    </>
   )
 }
 
