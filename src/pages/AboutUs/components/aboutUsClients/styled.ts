@@ -16,6 +16,16 @@ export const ClientsLayoutBg = styled.div`
   height: 620px;
 `
 
+export const AboutBgPhotoMain = styled.img`
+  margin: 0 auto;
+  width: 99.1vw;
+  max-height: 620px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+`
+
 export const ClientsBackground = styled.img`
   position: absolute;
   top: 0;

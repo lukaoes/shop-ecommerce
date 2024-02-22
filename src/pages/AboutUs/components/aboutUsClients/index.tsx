@@ -1,4 +1,5 @@
 import {
+  AboutBgPhotoMain,
   ClientChange,
   ClientsBackground,
   ClientsCard,
@@ -120,7 +121,7 @@ const AboutUsClients = () => {
             </ClientsCard>
           </div>
         </ClinetsLayout>
-        <ClientsBackground src={AboutUs} alt="background" />
+        <AboutBgPhotoMain src={AboutUs} alt="background" />
         <ClientsBackground src={AboutBgOver} alt="background" />
       </ClientsLayoutBg>
     </>
