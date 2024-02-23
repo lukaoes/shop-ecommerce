@@ -10,14 +10,21 @@ import {
 } from './styled'
 import HeaderLogo from '../../../assets/images/HeaderLogo.png'
 import NavigationStar from '../../../assets/images/NavigationStar.png'
-import SearchIcon from '../../../assets/images/SearchIcon.png'
 import HeartIcon from '../../../assets/images/HeartIcon.png'
 import CartIcon from '../../../assets/images/CartIcon.png'
 import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+import CartModal from 'components/ui/CartModal/Cart'
 
 const Header = () => {
   const activeStyle = {
     opacity: '1',
+  }
+
+  const [open, setOpen] = useState(false)
+
+  const setBodyFixed = () => {
+    document.body.classList.toggle('fixed')
   }
 
   return (
@@ -56,19 +63,19 @@ const Header = () => {
               </li>
               <li>
                 <NavLink
-                  to="/contact"
+                  to="/aboutus"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                  Contact Us
+                  About Us
                   <img src={NavigationStar} alt="star" />
                 </NavLink>
               </li>
               <li>
                 <NavLink
-                  to="/aboutus"
+                  to="/contact"
                   style={({ isActive }) => (isActive ? activeStyle : undefined)}
                 >
-                  About Us
+                  Contact Us
                   <img src={NavigationStar} alt="star" />
                 </NavLink>
               </li>
@@ -80,15 +87,29 @@ const Header = () => {
             <a href="#">Login</a> / <a href="#">Register</a>
           </HeaderAuth>
           <HeaderIcons>
-            <img src={SearchIcon} alt="search" />
             <img src={HeartIcon} alt="heart" />
-            <img src={CartIcon} alt="cart" />
+            <img
+              onClick={() => {
+                setOpen(true)
+                setBodyFixed()
+              }}
+              src={CartIcon}
+              alt="cart"
+            />
           </HeaderIcons>
           <BurgerMenu>
             <div></div>
             <div></div>
           </BurgerMenu>
         </HeaderOptions>
+
+        <CartModal
+          open={open}
+          onClose={() => {
+            setOpen(false)
+            setBodyFixed()
+          }}
+        />
       </HeaderContent>
     </HeaderLayout>
   )

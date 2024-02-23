@@ -3,6 +3,7 @@ import AboutUs from 'pages/AboutUs'
 import Blog from 'pages/Blog'
 import ContactUs from 'pages/ContactUs'
 import Page404 from 'pages/Page404'
+import Wishlist from 'pages/Wishlist'
 import Home from 'pages/home'
 import Shop from 'pages/shop'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -17,6 +18,7 @@ const AllRoutes = () => {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/wishlist" element={<Wishlist />} />
         </Route>
         <Route path="*" element={<Page404 />} />
       </Routes>

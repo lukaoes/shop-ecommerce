@@ -29,6 +29,13 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	background-color: #fffaf3;
+	overflow: auto;
+	height: auto;
+}
+
+body.fixed {
+	overflow: hidden;
+	height: 100vh;
 }
 ol, ul {
 	list-style: none;
