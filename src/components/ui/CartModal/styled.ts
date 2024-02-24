@@ -18,7 +18,7 @@ export const CartModalContainer = styled.div`
     right: -500px;
     top: 0;
     height: 100vh;
-    background: #fff;
+    background: #fffaf3;
     z-index: 7;
     max-width: 485px;
     transition: right 1s ease-in-out;

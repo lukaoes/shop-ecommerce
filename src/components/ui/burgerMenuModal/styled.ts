@@ -16,7 +16,7 @@ export const BurgerMenuModalBg = styled.div`
     background-color: #ffedd4;
     position: absolute;
     height: 100vh;
-    background: #fff;
+    background: #fffaf3;
     z-index: 17;
     transition: top 1s ease-in-out;
 
