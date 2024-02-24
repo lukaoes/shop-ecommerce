@@ -12,7 +12,7 @@ import HeaderLogo from '../../../assets/images/HeaderLogo.png'
 import NavigationStar from '../../../assets/images/NavigationStar.png'
 import HeartIcon from '../../../assets/images/HeartIcon.png'
 import CartIcon from '../../../assets/images/CartIcon.png'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import CartModal from 'components/ui/CartModal/Cart'
 import BurgerMenuModal from 'components/ui/burgerMenuModal'
@@ -89,7 +89,9 @@ const Header = () => {
             <a href="#">Login</a> / <a href="#">Register</a>
           </HeaderAuth>
           <HeaderIcons>
-            <img src={HeartIcon} alt="heart" />
+            <Link to="/wishlist">
+              <img src={HeartIcon} alt="heart" />
+            </Link>
             <img
               onClick={() => {
                 setOpen(true)

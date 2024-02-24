@@ -74,6 +74,10 @@ export const HeaderIcons = styled.div`
   display: flex;
   gap: 30px;
 
+  img {
+    max-height: 20px;
+  }
+
   img:hover {
     cursor: pointer;
   }
