@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const WishlistLayout = styled.div`
   max-width: 925px;
-  margin: 82px auto;
+  margin: 92px auto;
 `
 
 export const WishlistHeader = styled.div`

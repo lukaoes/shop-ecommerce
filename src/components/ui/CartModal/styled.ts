@@ -112,7 +112,10 @@ export const CartModalFooter = styled.div`
     }
   }
 
-  button {
+  a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
     border-radius: 10px;
     cursor: pointer;
     border: 1px solid #000;
@@ -123,7 +126,7 @@ export const CartModalFooter = styled.div`
     font-size: 16px;
   }
 
-  button:first-child {
+  a:first-child {
     background-color: transparent;
     margin: 40px 0 20px 0;
     &:hover {
@@ -131,7 +134,7 @@ export const CartModalFooter = styled.div`
       color: #fff;
     }
   }
-  button:last-child {
+  a:last-child {
     background-color: #000;
     color: #fff;
 

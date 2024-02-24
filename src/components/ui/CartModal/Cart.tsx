@@ -12,6 +12,7 @@ import {
   CartModalProductsHolder,
 } from './styled'
 import ShippingProgress from '../../../assets/images/ShippingProgress.png'
+import { Link } from 'react-router-dom'
 
 interface IProps {
   open: boolean
@@ -112,8 +113,8 @@ const CartModal: FC<IProps> = ({ open, onClose }) => {
             </div>
 
             <div>
-              <button>Checkout</button>
-              <button>View Cart</button>
+              <Link to="/checkout">Checkout</Link>
+              <Link to="/cart">View Cart</Link>
             </div>
           </CartModalFooter>
         </CartModalInsideContainer>
