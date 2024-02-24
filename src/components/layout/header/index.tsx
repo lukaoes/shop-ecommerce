@@ -15,6 +15,7 @@ import CartIcon from '../../../assets/images/CartIcon.png'
 import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import CartModal from 'components/ui/CartModal/Cart'
+import BurgerMenuModal from 'components/ui/burgerMenuModal'
 
 const Header = () => {
   const activeStyle = {
@@ -22,6 +23,7 @@ const Header = () => {
   }
 
   const [open, setOpen] = useState(false)
+  const [openBurger, setOpenBurger] = useState(false)
 
   const setBodyFixed = () => {
     document.body.classList.toggle('fixed')
@@ -97,12 +99,23 @@ const Header = () => {
               alt="cart"
             />
           </HeaderIcons>
-          <BurgerMenu>
+          <BurgerMenu
+            onClick={() => {
+              setOpenBurger(true)
+              setBodyFixed()
+            }}
+          >
             <div></div>
             <div></div>
           </BurgerMenu>
         </HeaderOptions>
-
+        <BurgerMenuModal
+          open={openBurger}
+          onClose={() => {
+            setOpenBurger(false)
+            setBodyFixed()
+          }}
+        />
         <CartModal
           open={open}
           onClose={() => {
