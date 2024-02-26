@@ -9,7 +9,8 @@ import {
 } from './styled'
 import CardHeartIcon from '../../../assets/images/CardHeartIcon.png'
 import CardCartIcon from '../../../assets/images/CardCartIcon.png'
-import { FC } from 'react'
+import { FC, useState } from 'react'
+import ProductDetailsModal from 'components/ui/productDetailsModal'
 
 export interface ICardProps {
   image: string
@@ -19,26 +20,48 @@ export interface ICardProps {
 }
 
 const Card: FC<ICardProps> = ({ image, title, price, sale }) => {
+  const [open, setOpen] = useState(false)
+
+  const setBodyFixed = () => {
+    document.body.classList.toggle('fixed')
+  }
+
   return (
-    <CardLayout>
-      <ImageContainer>
-        <CardImage src={image} alt={title} />
-        {sale && <SaleTag>GET {sale}% OFF</SaleTag>}
-        <CardIconContainer>
-          <div>
-            <img src={CardHeartIcon} alt="heart" />
-          </div>
-          <div>
-            <img src={CardCartIcon} alt="cart" className="CardCartIcon" />
-          </div>
-        </CardIconContainer>
-        <QuickView>QUICK VIEW</QuickView>
-      </ImageContainer>
-      <CardInfoContainer>
-        <h1>{title}</h1>
-        <span>${price}</span>
-      </CardInfoContainer>
-    </CardLayout>
+    <>
+      <CardLayout>
+        <ImageContainer>
+          <CardImage src={image} alt={title} />
+          {sale && <SaleTag>GET {sale}% OFF</SaleTag>}
+          <CardIconContainer>
+            <div>
+              <img src={CardHeartIcon} alt="heart" />
+            </div>
+            <div>
+              <img src={CardCartIcon} alt="cart" className="CardCartIcon" />
+            </div>
+          </CardIconContainer>
+          <QuickView
+            onClick={() => {
+              setOpen(true)
+              setBodyFixed()
+            }}
+          >
+            QUICK VIEW
+          </QuickView>
+        </ImageContainer>
+        <CardInfoContainer>
+          <h1>{title}</h1>
+          <span>${price}</span>
+        </CardInfoContainer>
+      </CardLayout>
+      <ProductDetailsModal
+        open={open}
+        onClose={() => {
+          setOpen(false)
+          setBodyFixed()
+        }}
+      />
+    </>
   )
 }
 
