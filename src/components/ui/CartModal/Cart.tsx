@@ -114,7 +114,9 @@ const CartModal: FC<IProps> = ({ open, onClose }) => {
 
             <div>
               <Link to="/checkout">Checkout</Link>
-              <Link to="/cart">View Cart</Link>
+              <Link to="/cart" onClick={() => onClose()}>
+                View Cart
+              </Link>
             </div>
           </CartModalFooter>
         </CartModalInsideContainer>
