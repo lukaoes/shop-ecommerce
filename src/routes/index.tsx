@@ -3,6 +3,9 @@ import AboutUs from 'pages/AboutUs'
 import Blog from 'pages/Blog'
 import Cart from 'pages/Cart'
 import ContactUs from 'pages/ContactUs'
+import LoginRegister from 'pages/LoginRegister'
+import Login from 'pages/LoginRegister/login'
+import Register from 'pages/LoginRegister/register'
 import Page404 from 'pages/Page404'
 import Wishlist from 'pages/Wishlist'
 import Home from 'pages/home'
@@ -21,6 +24,10 @@ const AllRoutes = () => {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/auth" element={<LoginRegister />}>
+            <Route path="/auth/login" element={<Login />} />
+            <Route path="/auth/register" element={<Register />} />
+          </Route>
         </Route>
         <Route path="*" element={<Page404 />} />
       </Routes>

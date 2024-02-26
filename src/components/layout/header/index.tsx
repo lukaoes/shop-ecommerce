@@ -86,7 +86,8 @@ const Header = () => {
         </LogoAndNavigation>
         <HeaderOptions>
           <HeaderAuth>
-            <a href="#">Login</a> / <a href="#">Register</a>
+            <Link to="/auth/login">Login</Link> /{' '}
+            <Link to="/auth/register">Register</Link>
           </HeaderAuth>
           <HeaderIcons>
             <Link to="/wishlist">
