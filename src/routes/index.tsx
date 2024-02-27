@@ -2,6 +2,7 @@ import Layout from 'components/layout'
 import AboutUs from 'pages/AboutUs'
 import Blog from 'pages/Blog'
 import Cart from 'pages/Cart'
+import Checkout from 'pages/Checkout'
 import ContactUs from 'pages/ContactUs'
 import LoginRegister from 'pages/LoginRegister'
 import Login from 'pages/LoginRegister/login'
@@ -25,6 +26,7 @@ const AllRoutes = () => {
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/auth" element={<LoginRegister />}>
             <Route path="/auth/login" element={<Login />} />
             <Route path="/auth/register" element={<Register />} />
