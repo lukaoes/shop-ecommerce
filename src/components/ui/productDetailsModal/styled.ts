@@ -45,7 +45,7 @@ export const ProductDetailsModalContainer = styled.div`
   width: 1070px;
   height: 620px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: #fffaf3;
   z-index: 17;
 `
 

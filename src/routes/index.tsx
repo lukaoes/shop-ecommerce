@@ -7,6 +7,7 @@ import LoginRegister from 'pages/LoginRegister'
 import Login from 'pages/LoginRegister/login'
 import Register from 'pages/LoginRegister/register'
 import Page404 from 'pages/Page404'
+import ProductDetail from 'pages/ProductDetail'
 import Wishlist from 'pages/Wishlist'
 import Home from 'pages/home'
 import Shop from 'pages/shop'
@@ -28,6 +29,7 @@ const AllRoutes = () => {
             <Route path="/auth/login" element={<Login />} />
             <Route path="/auth/register" element={<Register />} />
           </Route>
+          <Route path="/product/id" element={<ProductDetail />} />
         </Route>
         <Route path="*" element={<Page404 />} />
       </Routes>
