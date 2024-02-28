@@ -27,11 +27,23 @@ export const HeaderContent = styled.div`
     color: #000;
     text-decoration: none;
   }
+
+  @media only screen and (max-width: 545px) {
+    padding: 0 30px;
+  }
+  @media only screen and (max-width: 350px) {
+    padding: 0 20px;
+  }
 `
 
 export const Logo = styled.img`
   height: 44px;
   width: 144px;
+
+  @media only screen and (max-width: 470px) {
+    width: 100px;
+    height: auto;
+  }
 `
 
 export const LogoAndNavigation = styled.div`
@@ -56,18 +68,38 @@ export const LogoAndNavigation = styled.div`
       }
     }
   }
+  @media only screen and (max-width: 1240px) {
+    div ul {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 610px) {
+    gap: 0;
+    justify-content: space-between;
+  }
 `
 
 export const HeaderOptions = styled.div`
   display: flex;
   align-items: center;
   gap: 51px;
+  @media only screen and (max-width: 610px) {
+    gap: 30px;
+  }
+  @media only screen and (max-width: 350px) {
+    gap: 20px;
+  }
 `
 
 export const HeaderAuth = styled.div`
   border-bottom: 1px solid #b3afab;
   margin: 0;
   height: 19px;
+
+  @media only screen and (max-width: 770px) {
+    display: none;
+  }
 `
 
 export const HeaderIcons = styled.div`
@@ -80,6 +112,12 @@ export const HeaderIcons = styled.div`
 
   img:hover {
     cursor: pointer;
+  }
+  @media only screen and (max-width: 610px) {
+    gap: 25px;
+    img {
+      max-height: 20px;
+    }
   }
 `
 
@@ -94,5 +132,9 @@ export const BurgerMenu = styled.div`
     background-color: #000;
     width: 30px;
     height: 2px;
+  }
+
+  @media only screen and (min-width: 1241px) {
+    display: none;
   }
 `

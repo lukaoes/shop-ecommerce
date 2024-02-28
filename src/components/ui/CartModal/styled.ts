@@ -47,11 +47,14 @@ export const CartModalLayout = styled.div`
 `
 
 export const CartModalInsideContainer = styled.div`
-  /* width: 430px; */
   padding: 50px 80px;
   height: calc(100vh - 70px);
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 770px) {
+    padding: 50px 30px;
+  }
 `
 
 export const CartModalProductsHolder = styled.div`
@@ -95,6 +98,11 @@ export const CartModalHeader = styled.div`
     top: -20px;
     right: 420px;
     cursor: pointer;
+  }
+  @media only screen and (max-width: 540px) {
+    svg {
+      display: none;
+    }
   }
 `
 
@@ -143,6 +151,19 @@ export const CartModalFooter = styled.div`
       color: #000;
     }
   }
+
+  @media only screen and (max-width: 460px) {
+    div:first-child {
+      svg,
+      img {
+        display: none;
+      }
+    }
+    a:first-child {
+      background-color: transparent;
+      margin: 20px 0 20px 0;
+    }
+  }
 `
 
 export const CardModalPrice = styled.div`
@@ -150,6 +171,7 @@ export const CardModalPrice = styled.div`
   justify-content: space-between;
   font-family: LufgaMedium;
   font-size: 18px;
+  margin-bottom: 10px;
 `
 
 export const CartModalProductContainer = styled.div`
@@ -176,12 +198,26 @@ export const CartModalProductContainer = styled.div`
   svg {
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 360px) {
+    h3 {
+      width: 100px;
+      text-align: center;
+    }
+  }
 `
 
 export const CartModalStock = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 
   span {
     width: 16px;
@@ -192,6 +228,10 @@ export const CartModalStock = styled.div`
     font-family: LufgaMedium;
     font-size: 16px;
     display: inline-block;
+  }
+
+  @media only screen and (max-width: 380px) {
+    flex-direction: column;
   }
 `
 

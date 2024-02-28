@@ -15,7 +15,9 @@ import CartIcon from '../../../assets/images/CartIcon.png'
 import { Link, NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import CartModal from 'components/ui/CartModal/Cart'
-import BurgerMenuModal from 'components/ui/burgerMenuModal'
+import SearchModal from 'components/ui/burgerMenuModal'
+import SeachIcon from '../../../assets/images/SearchIcon.png'
+import MobileMenu from 'components/ui/mobileMenuModal'
 
 const Header = () => {
   const activeStyle = {
@@ -23,7 +25,8 @@ const Header = () => {
   }
 
   const [open, setOpen] = useState(false)
-  const [openBurger, setOpenBurger] = useState(false)
+  const [openSearch, setOpenSearch] = useState(false)
+  const [openMobile, setOpenMobile] = useState(false)
 
   const setBodyFixed = () => {
     document.body.classList.toggle('fixed')
@@ -95,6 +98,14 @@ const Header = () => {
             </Link>
             <img
               onClick={() => {
+                setOpenSearch(true)
+                setBodyFixed()
+              }}
+              src={SeachIcon}
+              alt="search"
+            />
+            <img
+              onClick={() => {
                 setOpen(true)
                 setBodyFixed()
               }}
@@ -104,7 +115,7 @@ const Header = () => {
           </HeaderIcons>
           <BurgerMenu
             onClick={() => {
-              setOpenBurger(true)
+              setOpenMobile(true)
               setBodyFixed()
             }}
           >
@@ -112,10 +123,10 @@ const Header = () => {
             <div></div>
           </BurgerMenu>
         </HeaderOptions>
-        <BurgerMenuModal
-          open={openBurger}
+        <SearchModal
+          open={openSearch}
           onClose={() => {
-            setOpenBurger(false)
+            setOpenSearch(false)
             setBodyFixed()
           }}
         />
@@ -123,6 +134,13 @@ const Header = () => {
           open={open}
           onClose={() => {
             setOpen(false)
+            setBodyFixed()
+          }}
+        />
+        <MobileMenu
+          open={openMobile}
+          onClose={() => {
+            setOpenMobile(false)
             setBodyFixed()
           }}
         />

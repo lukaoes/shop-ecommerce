@@ -29,13 +29,15 @@ const CartProduct: FC<ICartProduct> = ({ img, title }) => {
       <div>
         <h3>{title}</h3>
         <CartModalStock>
-          <CartModalProductButton onClick={() => change(true)}>
-            -
-          </CartModalProductButton>
-          <span>{number}</span>
-          <CartModalProductButton onClick={() => change(false)}>
-            +
-          </CartModalProductButton>
+          <div>
+            <CartModalProductButton onClick={() => change(true)}>
+              -
+            </CartModalProductButton>
+            <span>{number}</span>
+            <CartModalProductButton onClick={() => change(false)}>
+              +
+            </CartModalProductButton>
+          </div>
           <h5>$40.00</h5>
         </CartModalStock>
       </div>

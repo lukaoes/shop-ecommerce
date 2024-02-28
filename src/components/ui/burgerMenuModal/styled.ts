@@ -18,7 +18,7 @@ export const BurgerMenuModalBg = styled.div`
     height: 100vh;
     background: #fffaf3;
     z-index: 17;
-    transition: top 1s ease-in-out;
+    transition: top 0.4s ease-in-out;
 
     &.open {
       top: 0;
@@ -44,8 +44,14 @@ export const BurgerMenuBackground = styled.div`
 
 export const BurgerMenuCenter = styled.div`
   margin: 0 auto;
-  width: 100%;
+  width: calc(100% - 40px);
   max-width: 1305px;
+  padding: 0 20px;
+  @media only screen and (max-width: 396px) {
+    h1 {
+      display: none;
+    }
+  }
 `
 
 export const BurgerMenuModalLayout = styled.div`
@@ -63,6 +69,19 @@ export const BurgerMenuModalLayout = styled.div`
     font-size: 20px;
     font-family: LufgaMedium;
     margin-bottom: 30px;
+  }
+
+  @media only screen and (max-width: 980px) {
+    padding: 30px 0;
+    max-height: 400px;
+    gap: 30px;
+
+    h1 {
+      margin-bottom: 16px;
+    }
+  }
+  @media only screen and (max-width: 396px) {
+    max-height: 35px;
   }
 `
 
@@ -89,7 +108,7 @@ export const BurgerMenuSearch = styled.div`
     font-family: LufgaRegular;
     font-size: 20px;
     background-color: transparent;
-    width: calc(100% - 70px);
+    /* width: calc(100% - 70px); */
     outline: none;
     padding: 0 35px;
 
@@ -100,20 +119,50 @@ export const BurgerMenuSearch = styled.div`
 
   img {
     right: 10px;
-    top: 12px;
+    top: 7px;
     position: absolute;
+  }
+  @media only screen and (max-width: 668px) {
+    select {
+      width: auto;
+      font-size: 16px;
+    }
+
+    input {
+      font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    select,
+    div {
+      display: none;
+    }
   }
 `
 
 export const BurgerMenuSearchBottom = styled.div`
   margin-top: 22px;
+  max-height: 32px;
+  overflow: hidden;
   a {
     text-decoration: none;
     margin: 0 15px;
+  }
+  @media only screen and (max-width: 668px) {
+    display: none;
   }
 `
 
 export const BurgerMenuMayLike = styled.div`
   display: flex;
+  margin: 0 auto;
+  align-items: center;
   gap: 25px;
+  justify-content: space-between;
+  height: 232px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 396px) {
+    display: none;
+  }
 `

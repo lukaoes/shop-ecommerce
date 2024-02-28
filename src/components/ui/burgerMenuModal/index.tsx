@@ -59,7 +59,7 @@ const products = [
   },
 ]
 
-const BurgerMenuModal: FC<IProps> = ({ open, onClose }) => {
+const SearchModal: FC<IProps> = ({ open, onClose }) => {
   return (
     <BurgerMenuModalBg className={open ? 'open' : ''}>
       <BurgerMenuBackground onClick={() => onClose()}></BurgerMenuBackground>
@@ -100,4 +100,4 @@ const BurgerMenuModal: FC<IProps> = ({ open, onClose }) => {
   )
 }
 
-export default BurgerMenuModal
+export default SearchModal
