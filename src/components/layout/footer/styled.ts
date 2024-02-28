@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
 export const FooterLayoutTop = styled.div`
-  width: 1291px;
+  max-width: 1291px;
   margin: 0 auto;
   display: flex;
-  padding: 89px 0;
+  padding: 89px 20px;
   border-bottom: 1px solid #e6e1db;
+  @media only screen and (max-width: 550px) {
+    padding: 89px 0;
+  }
 `
 
 export const FooterTopLine = styled.div`
@@ -39,6 +42,9 @@ export const FooterContact = styled.div`
     font-size: 16px;
     font-family: LufgaMedium;
     margin-bottom: 6px;
+  }
+  @media only screen and (max-width: 550px) {
+    margin: 0 auto;
   }
 `
 export const FooterNewsteller = styled.div`
@@ -84,6 +90,25 @@ export const FooterCategories = styled.div`
     font-family: LufgaSemiBold;
     font-size: 20px;
     margin-bottom: 24px;
+  }
+  @media only screen and (max-width: 1072px) {
+    div:first-child {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 860px) {
+    div:nth-child(2) {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 660px) {
+    justify-content: flex-end;
+    div:nth-child(4) {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    display: none;
   }
 `
 
@@ -142,19 +167,23 @@ export const FooterList = styled.ul`
 `
 
 export const FooterBottom = styled.div`
-  width: 1291px;
+  max-width: 1291px;
   margin: 22px auto 30px auto;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-family: LufgaRegular;
   font-size: 15px;
   width: 1;
-
-  div {
-    display: inline-block;
-    width: 222px;
-    height: 19px;
-    margin: 0 0 0 24px;
-    background-color: #666;
+  gap: 10px;
+  span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  @media only screen and (max-width: 720px) {
+    font-size: 14px;
+    flex-direction: column;
+    justify-content: center;
   }
 `

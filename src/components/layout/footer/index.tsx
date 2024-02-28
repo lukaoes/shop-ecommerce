@@ -7,6 +7,7 @@ import {
 import FooterContactContainer from './components/footerContact'
 import FooterRecentPosts from './components/footerRecentPosts'
 import FooterMenu, { IFooterMenu } from './components/footerMenu'
+import FooterAccept from '../../../assets/images/FooterAccept.png'
 
 const Footer = () => {
   const storeLocations: IFooterMenu[] = [
@@ -102,7 +103,7 @@ const Footer = () => {
         <span>© 2023 DexignZone Theme. All Rights Reserved.</span>
         <span>
           We Accept:
-          <div></div>
+          <img src={FooterAccept} alt="accept" />
         </span>
       </FooterBottom>
     </>
