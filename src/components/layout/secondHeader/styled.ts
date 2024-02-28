@@ -39,12 +39,16 @@ export const SecondHeaderInfo = styled.div`
   justify-content: space-between;
   align-items: center;
   position: relative;
+  padding: 0 40px;
 `
 
 export const SecondHeaderPhotoLeaf = styled.img`
   position: absolute;
   right: -100px;
   bottom: 0;
+  @media only screen and (max-width: 1400px) {
+    display: none;
+  }
 `
 
 export const SecondHeaderPhotoLeafTwo = styled.img`
@@ -80,6 +84,9 @@ export const SecondHeaderLinks = styled.div`
   img {
     margin: 0px 15px;
   }
+  @media only screen and (max-width: 550px) {
+    margin: 0 auto;
+  }
 `
 
 export const SecondHeaderInfoImage = styled.img`
@@ -87,4 +94,7 @@ export const SecondHeaderInfoImage = styled.img`
   width: 285px;
   object-fit: cover;
   z-index: 1;
+  @media only screen and (max-width: 550px) {
+    display: none;
+  }
 `
