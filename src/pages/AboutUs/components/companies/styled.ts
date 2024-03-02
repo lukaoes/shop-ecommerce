@@ -21,6 +21,19 @@ export const AboutCompaniesContainer = styled.div`
     font-size: 16px;
     max-width: 336px;
   }
+  @media only screen and (max-width: 1124px) {
+    margin: 40px auto 50px auto;
+    flex-direction: column;
+    h1 {
+      text-align: center;
+      max-width: 850px;
+    }
+    p {
+      text-align: center;
+      margin: 0 auto 30px auto;
+      max-width: 850px;
+    }
+  }
 `
 
 export const AboutCompaniesImages = styled.div`
@@ -32,5 +45,8 @@ export const AboutCompaniesImages = styled.div`
     height: 100px;
     width: 189px;
     object-fit: cover;
+  }
+  @media only screen and (max-width: 1124px) {
+    justify-content: center;
   }
 `

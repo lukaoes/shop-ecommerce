@@ -7,6 +7,17 @@ export const ClinetsLayout = styled.div`
   z-index: 1022;
   position: relative;
   display: flex;
+  @media only screen and (max-width: 1310px) {
+    max-width: 710px;
+    margin: 0 auto;
+  }
+`
+
+export const AboutUsClientCardLayout = styled.div`
+  margin: 0 auto;
+  @media only screen and (max-width: 710px) {
+    width: 480px;
+  }
 `
 
 export const ClientsLayoutBg = styled.div`
@@ -14,23 +25,16 @@ export const ClientsLayoutBg = styled.div`
   position: relative;
   height: auto;
   height: 620px;
-`
-
-export const AboutBgPhotoMain = styled.img`
-  margin: 0 auto;
-  width: 99.1vw;
-  max-height: 620px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: -2;
+  background-color: #ffeac4;
+  @media only screen and (max-width: 1310px) {
+    overflow: hidden;
+  }
 `
 
 export const ClientsBackground = styled.img`
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
 `
 
 export const MainClientImg = styled.img`
@@ -40,6 +44,9 @@ export const MainClientImg = styled.img`
   bottom: 59px;
   object-fit: cover;
   margin-right: 160px;
+  @media only screen and (max-width: 1310px) {
+    display: none;
+  }
 `
 
 export const SatisfiedUser = styled.div`
@@ -55,6 +62,9 @@ export const SatisfiedUser = styled.div`
     font-size: 16px;
     line-height: 28px;
     margin-bottom: 6px;
+  }
+  @media only screen and (max-width: 1310px) {
+    display: none;
   }
 `
 
@@ -98,12 +108,18 @@ export const ClientsCardTitle = styled.h1`
   font-family: LufgaSemiBold;
   font-size: 45px;
   margin: 70px 0 30px 0;
+  @media only screen and (max-width: 720px) {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 310px;
+    font-size: 38px;
+  }
 `
 
 export const ClientsCard = styled.div`
   padding: 45px 40px 38px 40px;
   max-width: 630px;
-  height: calc(327px - 83px);
+  height: auto;
   background-color: #fff;
   border-radius: 30px;
   p {
@@ -111,6 +127,14 @@ export const ClientsCard = styled.div`
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 30px;
+  }
+  @media only screen and (max-width: 720px) {
+    width: 400px;
+  }
+  @media only screen and (max-width: 510px) {
+    margin: 0 auto;
+    padding: 20px;
+    width: 275px;
   }
 `
 
@@ -130,6 +154,10 @@ export const ClientsCardChoose = styled.div`
     object-fit: cover;
     border-radius: 100%;
     margin-right: 20px;
+  }
+
+  @media only screen and (max-width: 510px) {
+    flex-direction: column;
   }
 `
 

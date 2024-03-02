@@ -14,12 +14,21 @@ export const AccordionTitle = styled.h1`
   font-size: 40px;
   line-height: 60px;
   margin-bottom: 30px;
+  @media only screen and (max-width: 655px) {
+    width: auto;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+  }
 `
 
 export const AccordionP = styled.p`
   font-family: LufgaLight;
   font-size: 16px;
   line-height: 24px;
+  @media only screen and (max-width: 655px) {
+    margin: 0 auto;
+  }
 `
 
 export const AccordionCeo = styled.div`
@@ -45,6 +54,9 @@ export const AccordionCeo = styled.div`
       font-family: LufgaRegular;
       font-size: 16px;
     }
+  }
+  @media only screen and (max-width: 655px) {
+    margin: 20px auto 55px;
   }
 `
 
@@ -73,6 +85,9 @@ export const AccordionQuestion = styled.div`
     border-radius: 100%;
     background-color: #000;
   }
+  @media only screen and (max-width: 655px) {
+    margin: 0 auto 20px;
+  }
 `
 
 export const AccordionAnswer = styled.div`
@@ -82,6 +97,9 @@ export const AccordionAnswer = styled.div`
   margin: 19px 0 35px 0;
   height: 0;
   overflow: hidden;
+  @media only screen and (max-width: 655px) {
+    margin: 19px auto 35px;
+  }
 `
 
 export const InvestmentInfo = styled.div`
@@ -96,5 +114,16 @@ export const InvestmentInfo = styled.div`
   span {
     font-family: LufgaRegular;
     font-size: 20px;
+  }
+  @media only screen and (max-width: 1310px) {
+    max-width: 310px;
+  }
+  @media only screen and (max-width: 655px) {
+    margin: 30px auto;
+    max-width: 310px;
+    h3 {
+      font-size: 50px;
+      margin: 0;
+    }
   }
 `

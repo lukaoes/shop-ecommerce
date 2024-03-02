@@ -1,5 +1,5 @@
 import {
-  AboutBgPhotoMain,
+  AboutUsClientCardLayout,
   ClientChange,
   ClientsBackground,
   ClientsCard,
@@ -12,7 +12,6 @@ import {
   SatisfiedUser,
   SatisfiedUserImgs,
 } from './styled'
-import AboutUs from '../../../../assets/images/AboutUsBg.png'
 import AboutBgOver from '../../../../assets/images/AboutBgOver.png'
 import ClientMainPhoto from '../../../../assets/images/ClientMainPhoto.jpg'
 import AboutUsClientOne from '../../../../assets/images/AboutUsClientOne.jpg'
@@ -70,7 +69,7 @@ const AboutUsClients = () => {
               <span>12K+</span>
             </SatisfiedUserImgs>
           </SatisfiedUser>
-          <div>
+          <AboutUsClientCardLayout>
             <ClientsCardTitle>What our clients say about us</ClientsCardTitle>
             <ClientsCard>
               <p>{clients[currentClient].interview}</p>
@@ -119,9 +118,8 @@ const AboutUsClients = () => {
                 </ClientChange>
               </ClientsCardChoose>
             </ClientsCard>
-          </div>
+          </AboutUsClientCardLayout>
         </ClinetsLayout>
-        <AboutBgPhotoMain src={AboutUs} alt="background" />
         <ClientsBackground src={AboutBgOver} alt="background" />
       </ClientsLayoutBg>
     </>
