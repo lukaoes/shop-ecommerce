@@ -1,6 +1,7 @@
 import Layout from 'components/layout'
 import AboutUs from 'pages/AboutUs'
 import Blog from 'pages/Blog'
+import BlogDetails from 'pages/BlogDetails'
 import Cart from 'pages/Cart'
 import Checkout from 'pages/Checkout'
 import ContactUs from 'pages/ContactUs'
@@ -22,6 +23,7 @@ const AllRoutes = () => {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/wishlist" element={<Wishlist />} />
