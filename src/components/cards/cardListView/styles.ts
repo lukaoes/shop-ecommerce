@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CardListViewContainer = styled.div`
-  /* width: 960px; */
+  max-width: 1298px;
   height: 290px;
   display: flex;
   gap: 30px;

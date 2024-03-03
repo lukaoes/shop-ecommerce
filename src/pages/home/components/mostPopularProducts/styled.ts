@@ -6,4 +6,5 @@ export const MostPopularProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 `

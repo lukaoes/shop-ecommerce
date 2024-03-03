@@ -1,19 +1,19 @@
 import { Container } from 'components/layout/header/styled'
-// import MostPopularProducts from './components/mostPopularProducts'
-// import { HomeTitle, MostPopularFilterContainer } from './styles'
-// import { useState } from 'react'
+import MostPopularProducts from './components/mostPopularProducts'
+import { HomeTitle, MostPopularFilterContainer } from './styles'
+import { useState } from 'react'
 
 const Home = () => {
-  // const categories = ['Chairs', 'Sofas', 'Decor', 'Lighting', 'Tables']
-  // const [activeCategory, setActiveCategory] = useState(categories[0])
+  const categories = ['Chairs', 'Sofas', 'Decor', 'Lighting', 'Tables']
+  const [activeCategory, setActiveCategory] = useState(categories[0])
 
-  // const handleCategoryClick = (category: string) => {
-  //   setActiveCategory(category)
-  // }
+  const handleCategoryClick = (category: string) => {
+    setActiveCategory(category)
+  }
 
   return (
     <Container>
-      {/* <MostPopularFilterContainer>
+      <MostPopularFilterContainer>
         <HomeTitle>Most Popular Products</HomeTitle>
         <div>
           {categories.map((category) => (
@@ -26,8 +26,8 @@ const Home = () => {
             </span>
           ))}
         </div>
-      </MostPopularFilterContainer> */}
-      {/* <MostPopularProducts /> */}
+      </MostPopularFilterContainer>
+      <MostPopularProducts />
     </Container>
   )
 }

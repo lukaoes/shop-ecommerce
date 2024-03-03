@@ -7,12 +7,17 @@ export const ShopProductsContainer = styled.div`
 
 export const ProductsTopFilter = styled.div`
   display: flex;
-  width: 1290px;
+  max-width: 1290px;
   justify-content: space-between;
   margin: 26px 0 20px 0;
   font-size: 15px;
   font-family: LufgaRegular;
   line-height: 35px;
+  @media only screen and (max-width: 950px) {
+    div:nth-child(2) {
+      display: none;
+    }
+  }
 `
 
 export const ProductsTopRight = styled.div`
@@ -41,5 +46,25 @@ export const ProductsTopRight = styled.div`
     height: 35px;
     line-height: 35px;
     padding: 0 20px;
+  }
+  @media only screen and (max-width: 1250px) {
+    div:first-child,
+    div:nth-child(2) {
+      display: none;
+    }
+  }
+
+  /* @media only screen and (max-width: 1201px) {
+    div {
+      img:nth-child(2) {
+        display: none;
+      }
+    }
+  } */
+
+  @media only screen and (max-width: 750px) {
+    div {
+      padding: 0;
+    }
   }
 `

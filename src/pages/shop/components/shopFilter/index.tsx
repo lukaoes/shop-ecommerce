@@ -1,13 +1,11 @@
 import {
   ShopFilterButton,
   ShopFilterContainer,
-  ShopFilterIcon,
   ShopFilterSeach,
   ShopFilterSearchContainer,
   ShopFilterTitle,
 } from './styled'
 import SearchIcon from '../../../../assets/images/SearchIcon.png'
-import FiltersIcon from '../../../../assets/images/FiltersIcon.png'
 import ShopFilterColorSection from './components/shopFilterColorSection'
 import ShopFilterSizeSection from './components/shopFilterSizeSection'
 import ShopFilterCategoriesSection from './components/shopFilterCategoriesSection'
@@ -50,10 +48,6 @@ const ShopFilter = () => {
 
   return (
     <ShopFilterContainer>
-      <ShopFilterIcon>
-        <img src={FiltersIcon} alt="filter" />
-        <span>Filters</span>
-      </ShopFilterIcon>
       <ShopFilterSearchContainer>
         <ShopFilterSeach
           value={filters.search}

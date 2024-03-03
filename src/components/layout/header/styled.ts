@@ -11,6 +11,9 @@ export const HeaderLayout = styled.header`
 
 export const Container = styled.div`
   padding: 0 80px;
+  @media only screen and (max-width: 530px) {
+    padding: 0;
+  }
 `
 
 export const HeaderContent = styled.div`
