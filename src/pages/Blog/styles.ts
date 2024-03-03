@@ -5,11 +5,16 @@ export const BlogLayout = styled.div`
 `
 
 export const BlogContainer = styled.div`
-  width: 1290px;
+  max-width: 1290px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
   margin: 0 auto 60px auto;
+  @media only screen and (max-width: 650px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const BlogButtonDiv = styled.div`

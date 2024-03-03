@@ -12,6 +12,12 @@ export const BlogCardContainer = styled.div`
     object-fit: cover;
     border-radius: 20px;
   }
+  @media only screen and (max-width: 650px) {
+    width: 300px;
+    img {
+      width: 300px;
+    }
+  }
 `
 
 export const BlogCardInfo = styled.div`
@@ -51,6 +57,14 @@ export const BlogCardInfo = styled.div`
       background-color: #fff;
       color: #000;
       text-decoration: none;
+    }
+  }
+  @media only screen and (max-width: 650px) {
+    width: 200px;
+    height: 155px;
+    p {
+      font-size: 18px;
+      line-height: 25px;
     }
   }
 `
