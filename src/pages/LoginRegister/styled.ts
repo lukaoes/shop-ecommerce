@@ -9,6 +9,9 @@ export const AuthLeft = styled.div`
   height: 900px;
   position: relative;
   background-color: #ffedd4;
+  @media only screen and (max-width: 1180px) {
+    display: none;
+  }
 `
 
 export const AuthRight = styled.div`
@@ -16,6 +19,10 @@ export const AuthRight = styled.div`
   justify-content: center;
   align-items: center;
   width: 50vw;
+  @media only screen and (max-width: 1180px) {
+    margin: 60px auto;
+    width: 100%;
+  }
 `
 
 export const AuthDoor = styled.div`
@@ -26,6 +33,9 @@ export const AuthDoor = styled.div`
   width: 485px;
   border-radius: 50% 50% 0% 0%;
   background-color: #fffaf3;
+  @media only screen and (max-width: 1180px) {
+    display: none;
+  }
 `
 
 export const AuthImg = styled.img`
@@ -36,6 +46,9 @@ export const AuthImg = styled.img`
   width: 549px;
   height: 775px;
   object-fit: cover;
+  @media only screen and (max-width: 960px) {
+    display: none;
+  }
 `
 
 export const AuthH1 = styled.h1`
@@ -58,6 +71,9 @@ export const AuthContainer = styled.div`
   background-color: transparent;
   border: 1px solid #000;
   border-radius: 30px;
+  @media only screen and (max-width: 450px) {
+    padding: 20px;
+  }
 `
 
 export const AuthInside = styled.div`
@@ -177,5 +193,8 @@ export const AuthPath = styled.div`
     display: flex;
     gap: 10px;
     align-items: center;
+  }
+  @media only screen and (max-width: 960px) {
+    display: none;
   }
 `
