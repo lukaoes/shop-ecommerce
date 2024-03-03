@@ -11,9 +11,15 @@ import { useState } from 'react'
 import CardListViewSection from './components/CardListViewSection'
 import MostPopularProducts from 'pages/home/components/mostPopularProducts'
 import { ShopFilterIcon } from '../shopFilter/styled'
+import FilterModal from 'components/ui/filterModal'
 
 const ShopProducts = () => {
   const [activeImage, setActiveImage] = useState(1)
+  const [open, setOpen] = useState(false)
+
+  const setBodyFixed = () => {
+    document.body.classList.toggle('fixed')
+  }
 
   const handleImageClick = (imageNumber: number) => {
     setActiveImage(imageNumber)
@@ -22,7 +28,12 @@ const ShopProducts = () => {
   return (
     <ShopProductsContainer>
       <ProductsTopFilter>
-        <ShopFilterIcon>
+        <ShopFilterIcon
+          onClick={() => {
+            setOpen(true)
+            setBodyFixed()
+          }}
+        >
           <img src={FiltersIcon} alt="filter" />
           <span>Filters</span>
         </ShopFilterIcon>
@@ -47,6 +58,13 @@ const ShopProducts = () => {
         </ProductsTopRight>
       </ProductsTopFilter>
       {activeImage === 1 ? <MostPopularProducts /> : <CardListViewSection />}
+      <FilterModal
+        open={open}
+        onClose={() => {
+          setOpen(false)
+          setBodyFixed()
+        }}
+      />
     </ShopProductsContainer>
   )
 }

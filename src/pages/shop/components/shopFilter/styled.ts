@@ -3,8 +3,10 @@ import styled from 'styled-components'
 export const ShopFilterContainer = styled.div`
   width: 328px;
   margin: 26px 0;
-  @media only screen and (max-width: 770px) {
-    display: none;
+  @media only screen and (max-width: 400px) {
+    max-width: 240px;
+    max-height: 90%;
+    overflow: auto;
   }
 `
 
@@ -20,6 +22,7 @@ export const ShopFilterIcon = styled.div`
   gap: 10px;
   font-family: LufgaRegular;
   font-size: 16px;
+  cursor: pointer;
 `
 
 export const ShopFilterSearchContainer = styled.div`
@@ -45,6 +48,9 @@ export const ShopFilterSeach = styled.input`
 
   &::placeholder {
     color: #000;
+  }
+  @media only screen and (max-width: 400px) {
+    max-width: 240px;
   }
 `
 

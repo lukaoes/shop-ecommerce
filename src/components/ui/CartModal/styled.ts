@@ -21,7 +21,7 @@ export const CartModalContainer = styled.div`
     background: #fffaf3;
     z-index: 7;
     max-width: 485px;
-    transition: right 1s ease-in-out;
+    transition: right 0.3s ease-in-out;
     // transition-delay: 1s;
 
     &.open {

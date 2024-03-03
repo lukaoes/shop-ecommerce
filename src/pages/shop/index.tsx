@@ -18,7 +18,9 @@ const Shop = () => {
       <Container>
         <ShopContainer>
           <ShopLayout>
-            <ShopFilter />
+            <div className="remove-filter">
+              <ShopFilter />
+            </div>
             <ShopProducts />
           </ShopLayout>
         </ShopContainer>
