@@ -26,6 +26,23 @@ const Card: FC<ICardProps> = ({ image, title, price, sale }) => {
     document.body.classList.toggle('fixed')
   }
 
+  const setFavorite = (id: number) => {
+    const currentFavorites = localStorage.getItem('shop-favorite')
+    if (!currentFavorites) {
+      const favArr = JSON.stringify([id])
+      localStorage.setItem('shop-favorite', favArr)
+    } else {
+      let favArr = JSON.parse(currentFavorites)
+      if (favArr.includes(id)) {
+        favArr = favArr.filter((item: number) => item !== id)
+      } else {
+        favArr.push(id)
+      }
+      favArr = JSON.stringify(favArr)
+      localStorage.setItem('shop-favorite', favArr)
+    }
+  }
+
   return (
     <>
       <CardLayout>
@@ -33,7 +50,7 @@ const Card: FC<ICardProps> = ({ image, title, price, sale }) => {
           <CardImage src={image} alt={title} />
           {sale && <SaleTag>GET {sale}% OFF</SaleTag>}
           <CardIconContainer>
-            <div>
+            <div onClick={() => setFavorite(13)}>
               <img src={CardHeartIcon} alt="heart" />
             </div>
             <div>
