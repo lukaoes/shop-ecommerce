@@ -54,7 +54,6 @@ const Wishlist = () => {
           <span className="product">Products</span>
           <div>
             <span>Price</span>
-            <span>Stock</span>
           </div>
         </WishlistHeader>
         {wishlistProducts.map((item, index) => (
@@ -69,7 +68,6 @@ const Wishlist = () => {
             </WishlistProductLeft>
             <WishlistProductRight>
               <span>${item.price}</span>
-              <span>{item.stock ? 'In Stock' : 'Out of Stock'}</span>
               <div>Add To Cart</div>
             </WishlistProductRight>
           </WishlistProduct>

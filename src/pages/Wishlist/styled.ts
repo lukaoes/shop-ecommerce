@@ -10,7 +10,6 @@ export const WishlistHeader = styled.div`
   border-bottom: 1px solid #ccc;
   div {
     margin-left: auto;
-    margin-right: 208px;
     display: flex;
     justify-content: space-between;
     width: 142px;
@@ -28,6 +27,7 @@ export const WishlistHeader = styled.div`
 `
 
 export const WishlistProduct = styled.div`
+  padding: 0 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,6 +39,14 @@ export const WishlistProduct = styled.div`
     height: 100px;
     border-radius: 30px;
     object-fit: cover;
+  }
+  @media only screen and (max-width: 720px) {
+    margin-top: 20px;
+    img {
+      border-radius: 10px;
+      width: 50px;
+      height: 70px;
+    }
   }
 `
 
@@ -54,12 +62,19 @@ export const WishlistProductLeft = styled.div`
     line-height: 150%;
     max-width: 160px;
   }
+  @media only screen and (max-width: 720px) {
+    gap: 5px;
+    p {
+      font-size: 14px;
+    }
+  }
 `
 
 export const WishlistProductRight = styled.div`
   width: 350px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 20px;
   align-items: center;
   font-family: LufgaMedium;
   font-size: 16px;
@@ -76,6 +91,13 @@ export const WishlistProductRight = styled.div`
     &:hover {
       color: #000;
       background-color: #fff;
+    }
+  }
+  @media only screen and (max-width: 570px) {
+    font-size: 14px;
+    max-width: 250px;
+    div {
+      padding: 6px 6px;
     }
   }
 `
@@ -112,5 +134,12 @@ export const WishlistXButton = styled.div`
       background-color: #000;
     }
     background-color: #fff;
+  }
+  @media only screen and (max-width: 720px) {
+    width: 30px;
+    height: 20px;
+    div {
+      height: 10px;
+    }
   }
 `
