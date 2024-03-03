@@ -3,10 +3,12 @@ import styled from 'styled-components'
 export const ShopFilterContainer = styled.div`
   width: 328px;
   margin: 26px 0;
-  @media only screen and (max-width: 400px) {
-    max-width: 240px;
+  @media only screen and (max-width: 770px) {
     max-height: 90%;
     overflow: auto;
+  }
+  @media only screen and (max-width: 400px) {
+    max-width: 240px;
   }
 `
 
@@ -23,6 +25,9 @@ export const ShopFilterIcon = styled.div`
   font-family: LufgaRegular;
   font-size: 16px;
   cursor: pointer;
+  @media only screen and (min-width: 770px) {
+    display: none;
+  }
 `
 
 export const ShopFilterSearchContainer = styled.div`

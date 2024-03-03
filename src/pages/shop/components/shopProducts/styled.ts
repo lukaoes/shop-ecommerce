@@ -13,7 +13,7 @@ export const ProductsTopFilter = styled.div`
   font-size: 15px;
   font-family: LufgaRegular;
   line-height: 35px;
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 850px) {
     div:nth-child(2) {
       display: none;
     }
@@ -47,20 +47,12 @@ export const ProductsTopRight = styled.div`
     line-height: 35px;
     padding: 0 20px;
   }
-  @media only screen and (max-width: 1250px) {
+  @media only screen and (max-width: 1150px) {
     div:first-child,
     div:nth-child(2) {
       display: none;
     }
   }
-
-  /* @media only screen and (max-width: 1201px) {
-    div {
-      img:nth-child(2) {
-        display: none;
-      }
-    }
-  } */
 
   @media only screen and (max-width: 750px) {
     div {

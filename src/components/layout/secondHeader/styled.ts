@@ -46,7 +46,7 @@ export const SecondHeaderPhotoLeaf = styled.img`
   position: absolute;
   right: -100px;
   bottom: 0;
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1490px) {
     display: none;
   }
 `
