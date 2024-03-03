@@ -12,8 +12,10 @@ import personBlack from '../../assets/images/personBlack.svg'
 import commentIcon from '../../assets/images/commentIcon.svg'
 import Quotemarks from '../../assets/images/Quotemarks.svg'
 import BlogCheck from '../../assets/images/BlogCheck.svg'
+import { useParams } from 'react-router-dom'
 
 const BlogDetails = () => {
+  const { id } = useParams()
   return (
     <>
       <BlogDetailsLayout>
@@ -22,7 +24,7 @@ const BlogDetails = () => {
           <div>
             <span>17 May 2022</span>
             <span>
-              <img src={personBlack} alt="person" />
+              <img src={personBlack} alt={id} />
               By Kk Sharma
             </span>
             <span>

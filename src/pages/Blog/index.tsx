@@ -14,7 +14,7 @@ const blogOne = {
     'https://d2fwbsa91kuigh.cloudfront.net/media/wysiwyg/2023-Q1-RAMADAN-FEEL-E-MUSK-PRODUCT-CT9_1__16.jpg',
   title: 'Uncovering the Beauty Benefits of Plant-Based Skincare',
   date: '17 MAY 2022',
-  link: '#',
+  link: 'blog/uncovering',
 }
 
 const blogTwo = {
@@ -22,7 +22,7 @@ const blogTwo = {
     'https://d2fwbsa91kuigh.cloudfront.net/media/wysiwyg/2023-Q1-Haircare-Spend-More-Save_more-CT10_2.jpg',
   title: 'Fashion Diversity: Celebrating Style for All Body Types',
   date: '28 MAR 2023',
-  link: '#',
+  link: 'blog/fashion',
 }
 
 const secondHeaderInfo = {
