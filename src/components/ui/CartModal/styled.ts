@@ -232,6 +232,7 @@ export const CartModalStock = styled.div`
 
   @media only screen and (max-width: 380px) {
     flex-direction: column;
+    gap: 2px;
   }
 `
 
@@ -251,5 +252,9 @@ export const CartModalProductButton = styled.div`
   &:hover {
     color: #000;
     background-color: transparent;
+  }
+  @media only screen and (max-width: 630px) {
+    height: 20px;
+    width: 20px;
   }
 `

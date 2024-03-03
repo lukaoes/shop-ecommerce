@@ -23,6 +23,34 @@ export const CartProdsListHeader = styled.div`
       width: 140px;
     }
   }
+  @media only screen and (max-width: 800px) {
+    div {
+      font-size: 16px;
+      span:first-child {
+        width: 60px;
+      }
+      span:nth-child(2) {
+        width: 92px;
+      }
+      span:last-child {
+        width: 90px;
+      }
+    }
+  }
+  @media only screen and (max-width: 380px) {
+    div {
+      font-size: 14px;
+      span:first-child {
+        width: 38px;
+      }
+      span:nth-child(2) {
+        width: 66px;
+      }
+      span:last-child {
+        width: 70px;
+      }
+    }
+  }
 `
 
 export const CartProd = styled.div`
@@ -41,6 +69,33 @@ export const CartProd = styled.div`
     font-size: 18px;
     width: 260px;
     max-height: 46px;
+  }
+  @media only screen and (max-width: 900px) {
+    justify-content: space-between;
+    gap: 0;
+  }
+  @media only screen and (max-width: 800px) {
+    h2 {
+      max-width: 260px;
+    }
+  }
+  @media only screen and (max-width: 630px) {
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    h2 {
+      overflow: hidden;
+      font-size: 16px;
+      max-width: 170px;
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    h2 {
+      overflow: hidden;
+      font-size: 12px;
+      max-width: 70px;
+    }
   }
 `
 
@@ -72,6 +127,12 @@ export const CardProdRight = styled.div`
     border: 1px solid #000;
     border-radius: 100%;
     line-height: 31px;
+  }
+  @media only screen and (max-width: 800px) {
+    gap: 0;
+    span {
+      border: none;
+    }
   }
 `
 
@@ -116,6 +177,16 @@ export const CardProdCode = styled.div`
     &:hover {
       background-color: #fff;
       color: #000;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    gap: 10px;
+    div input {
+      width: 90%;
+    }
+    button {
+      padding: 10px 0;
     }
   }
 `
