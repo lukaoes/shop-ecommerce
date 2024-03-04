@@ -1,5 +1,8 @@
 import SecondHeader from 'components/layout/secondHeader'
 import CheckoutBg from '../../assets/images/CheckoutBg.jpg'
+import { CheckoutLayout } from './styles'
+import CheckoutLeft from './components/CheckoutLeft'
+import CheckoutRight from './components/CheckoutRight'
 
 const Checkout = () => {
   const secondHeaderInfo = {
@@ -10,9 +13,10 @@ const Checkout = () => {
   return (
     <>
       <SecondHeader {...secondHeaderInfo} />
-      <div>
-        <div>1</div>
-      </div>
+      <CheckoutLayout>
+        <CheckoutLeft />
+        <CheckoutRight />
+      </CheckoutLayout>
     </>
   )
 }
