@@ -22,7 +22,6 @@ export const CartModalContainer = styled.div`
     z-index: 7;
     max-width: 485px;
     transition: right 0.3s ease-in-out;
-    // transition-delay: 1s;
 
     &.open {
       right: 0;
@@ -153,6 +152,8 @@ export const CartModalFooter = styled.div`
   }
 
   @media only screen and (max-width: 460px) {
+    margin: 0;
+    margin-top: 10px;
     div:first-child {
       svg,
       img {
@@ -161,7 +162,7 @@ export const CartModalFooter = styled.div`
     }
     a:first-child {
       background-color: transparent;
-      margin: 20px 0 20px 0;
+      margin: 10px 0 10px 0;
     }
   }
 `
