@@ -17,6 +17,7 @@ export const CartTotalContainer = styled.div`
   border-radius: 20px;
   padding: 35px 30px;
   max-width: 400px;
+  min-width: 329px;
 
   h3 {
     font-family: LufgaMedium;
@@ -59,6 +60,11 @@ export const CartTotalContainer = styled.div`
       color: #000;
       background-color: #fff;
     }
+  }
+  @media only screen and (max-width: 500px) {
+    padding: 35px 15px;
+    max-width: 400px;
+    min-width: 274px;
   }
 `
 

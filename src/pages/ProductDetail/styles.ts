@@ -1,14 +1,34 @@
 import styled from 'styled-components'
 
+export const ProductDetailContainer = styled.div`
+  padding: 0 80px;
+  @media only screen and (max-width: 535px) {
+    padding: 0 10px;
+  }
+`
+
 export const ProductDetaiTop = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 33px;
   margin-bottom: 90px;
+  flex-wrap: wrap;
+
+  div.product-info-price {
+    display: flex;
+    gap: 33px;
+  }
+  @media only screen and (max-width: 855px) {
+    div.product-info-price {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 `
 
 export const ProductDetaiTopImg = styled.div`
   height: 737px;
-  width: 566px;
+  max-width: 566px;
   position: relative;
   margin: 50px 0 0 0;
 
@@ -17,6 +37,9 @@ export const ProductDetaiTopImg = styled.div`
     height: 100%;
     object-fit: cover;
     border-radius: 30px;
+  }
+  @media only screen and (max-width: 535px) {
+    height: 500px;
   }
 `
 
@@ -40,10 +63,16 @@ export const ProductDetailImgSlide = styled.div`
       border: 2px solid #fff;
     }
   }
+  @media only screen and (max-width: 535px) {
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 `
 
 export const ProdDetailInfo = styled.div`
-  width: 730px;
+  max-width: 730px;
   margin: 75px 0 0 0;
 `
 
@@ -82,7 +111,7 @@ export const ProdDetailColor = styled.div`
 `
 
 export const ProductDetailBottom = styled.div`
-  width: 1290px;
+  max-width: 1290px;
   margin: 0 auto;
 `
 
@@ -120,8 +149,10 @@ export const ProductDetailBottomDesc = styled.div`
 
   div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 46px;
+    flex-wrap: wrap;
     div {
       display: flex;
       align-items: center;
@@ -138,8 +169,10 @@ export const ProductDetailBottomDesc = styled.div`
 export const ProdDetailBottomImgs = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 70px;
+  gap: 45px;
   img {
     width: 400px;
     height: 375px;
@@ -178,4 +211,5 @@ export const ProdDetailSimilarCards = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
+  flex-wrap: wrap;
 `

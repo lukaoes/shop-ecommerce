@@ -1,4 +1,3 @@
-import { Container } from 'components/layout/header/styled'
 import {
   ProdDetailBottomImgs,
   ProdDetailSimilar,
@@ -8,6 +7,7 @@ import {
   ProductDetailBottom,
   ProductDetailBottomDesc,
   ProductDetailBottomHeader,
+  ProductDetailContainer,
   ProductDetailImgSlide,
 } from './styles'
 import ProductDetailInfo from './productDetailInfo'
@@ -18,7 +18,7 @@ import CardBlockbuster from 'components/cards/cardBlockbuster'
 
 const ProductDetail = () => {
   return (
-    <Container>
+    <ProductDetailContainer>
       <ProductDetaiTop>
         <ProductDetaiTopImg>
           <img
@@ -41,8 +41,10 @@ const ProductDetail = () => {
             />
           </ProductDetailImgSlide>
         </ProductDetaiTopImg>
-        <ProductDetailInfo />
-        <ProductDetailPrice />
+        <div className="product-info-price">
+          <ProductDetailInfo />
+          <ProductDetailPrice />
+        </div>
       </ProductDetaiTop>
       <ProductDetailBottom>
         <ProductDetailBottomHeader>
@@ -103,7 +105,7 @@ const ProductDetail = () => {
           <CardBlockbuster />
         </ProdDetailSimilarCards>
       </ProductDetailBottom>
-    </Container>
+    </ProductDetailContainer>
   )
 }
 

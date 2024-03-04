@@ -11,7 +11,7 @@ export const CardBlockbusterLayout = styled.div`
     rgba(255, 255, 255, 0)
   );
   position: relative;
-  margin: 100px auto; //for display
+  margin: 50px auto; //for display
 `
 
 export const CardBlockbusterImg = styled.img`

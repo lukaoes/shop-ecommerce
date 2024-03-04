@@ -133,6 +133,9 @@ export const ProductDetailsModalMiddle = styled.div`
     border-radius: 100%;
     line-height: 31px;
   }
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+  }
 `
 
 export const AddToWlistBtn = styled.div`
@@ -166,6 +169,7 @@ export const ProductDetailsModalBottom = styled.div`
   div {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 
     span {
       font-family: LufgaRegular;
