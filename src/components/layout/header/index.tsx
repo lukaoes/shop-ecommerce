@@ -36,7 +36,9 @@ const Header = () => {
     <HeaderLayout>
       <HeaderContent>
         <LogoAndNavigation>
-          <Logo src={HeaderLogo} alt="logo" />
+          <Link to="/">
+            <Logo src={HeaderLogo} alt="logo" />
+          </Link>
           <div>
             <ul>
               <li>
